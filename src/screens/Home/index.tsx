@@ -9,9 +9,8 @@ export function Home({children, title}:HomeProps) {
     return (
         <View>
             {children}
-            <Text>
-                {title}
-            </Text>
+            
         </View>
+        
     )
 }

@@ -1,13 +1,37 @@
+import React from 'react';
+import {Button, Text, TextInput, View} from 'react-native';
+import { useState } from 'react';
+import Email from './screens/Email';
 
-import { Text } from "react-native";
-import { Home } from "./screens";
+const Copo = props => {
+    const [IsCheio, setIsCheio] = useState(true);
 
-export default function App() {
-    return (
-        <Home title="Home">
+    return(
+        <View>
             <Text>
-                Olá, Mundo
+                Hello, I'm {props.name} .Agora estou {IsCheio ? 'Vazio' : 'Está cheio'}!
             </Text>
-        </Home>
+            <Button
+            onPress={() => {
+                setIsCheio(false);
+            }}
+            disabled={!IsCheio}
+            title={IsCheio ? 'Encha o copo, por favor' : 'Está cheio'}
+            />
+        </View>
     )
 }
+
+
+
+const Cafe = () => {
+    return (
+      <>
+        <Copo/>
+        <Copo name="Spot" />
+        <Email/>
+        
+      </>
+    );
+  };    
+export default Cafe;
