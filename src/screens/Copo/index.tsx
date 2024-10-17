@@ -22,9 +22,11 @@ const Copo = props => {
             <Button
             onPress={() => {
                 setIsCheio(false);
+                
             }}
             disabled={!IsCheio}
             title={IsCheio ? 'Encha o copo, por favor' : 'Está cheio'}
+            color={'#841584'}
             />
         </View>
     )

@@ -1,16 +1,13 @@
-import { Image, View } from "react-native";
+import { Image } from "react-native";
 
 const Imagem = () => {
     return ( 
-      <View>
         <Image
         source={{
           uri: 'https://reactnative.dev/docs/assets/p_cat2.png',
         }}
-        style={{width: 200, height: 200}}
-      />
-      </View>
-      )
+        style={{width: 200, height: 100}}
+      />)
 }
 
 export default Imagem

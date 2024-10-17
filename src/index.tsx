@@ -1,22 +1,25 @@
-import React from 'react';
-import {Button, ScrollView, Text, View, Image, TextInput, StyleSheet, ImageBackground} from 'react-native';
-import { useState } from 'react';
-import Email from './screens/Email';
-import Imagem from './screens/Images';
-import Copo from './screens/Copo';
-
-const image = {uri: 'https://legacy.reactjs.org/logo-og.png'};
+import * as React from 'react';
+import {NavigationContainer} from '@react-navigation/native';
+import {createNativeStackNavigator} from '@react-navigation/native-stack';
+import Home from './screens/Home';
+import TelaLogin from './screens/log';
 
 
+const Stack = createNativeStackNavigator();
 
-const Cafe = () => {
-    return ( 
-        <View>
-        <Imagem/>
-        <Copo name="Spot" />
-        <Email/>
-        
-        </View>
-    );
+
+const Screen = () => {
+  return (
+    <NavigationContainer>
+      <Stack.Navigator>
+        <Stack.Screen
+          name="Home"
+          component={Home}
+          options={{title: 'Welcome'}}
+        />
+        <Stack.Screen name="Login" component={TelaLogin} />
+      </Stack.Navigator>
+    </NavigationContainer>
+  );
   };    
-export default Cafe;
+export default Screen;
