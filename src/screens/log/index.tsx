@@ -23,8 +23,8 @@ const [number, onChangeNumber] = React.useState('');
         placeholder="Insira sua senha"
         keyboardType="numeric"
       />
-      <Button title="Go to Home" 
-      onPress={() => navigation.navigate("Home")}/>
+      <Button title="Go to Copo" 
+      onPress={() => navigation.navigate("Copo")}/>
     
       </SafeAreaView>
     )
