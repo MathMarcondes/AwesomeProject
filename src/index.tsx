@@ -14,9 +14,7 @@ const Screen = () => {
       <Stack.Navigator>
         <Stack.Screen
           name="Home"
-          component={Home}
-          options={{title: 'Welcome'}}
-        />
+          component={Home}/>
         <Stack.Screen name="Login" component={TelaLogin} />
       </Stack.Navigator>
     </NavigationContainer>
