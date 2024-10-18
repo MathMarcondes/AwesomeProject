@@ -2,7 +2,7 @@ import { useState } from "react";
 import { TextInput, Text, View, Button, StyleSheet } from "react-native";
 import React from "react";
 
-const Copo = props => {
+export default function Copo ({navigation}) {
 
 
     const [IsCheio, setIsCheio] = useState(true);
@@ -16,18 +16,19 @@ const Copo = props => {
              value={text}
             />
             <Text style={{flex: 1, backgroundColor: 'purple'}}>
-                Hello, I'm {props.name} .Agora estou {IsCheio ? 'Vazio' : 'Está cheio'}!
+                Hello, I'm .Agora estou {IsCheio ? 'Vazio' : 'Está cheio'}!
             </Text>
             
             <Button
             onPress={() => {
                 setIsCheio(false);
-                
             }}
             disabled={!IsCheio}
             title={IsCheio ? 'Encha o copo, por favor' : 'Está cheio'}
-            color={'#841584'}
             />
+            <Button
+            title="Home" 
+            onPress={() => navigation.navigate('Home')}/>
         </View>
     )
 }
@@ -42,4 +43,3 @@ const styles = StyleSheet.create({
 });
 
 
-export default Copo
