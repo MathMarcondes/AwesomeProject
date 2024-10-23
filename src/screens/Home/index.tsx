@@ -14,6 +14,7 @@ export default function Home ({navigation}) {
             <Button 
             title="Go to Login"
             onPress={() => navigation.navigate("Login")}
+            
             />
         </View>
     )

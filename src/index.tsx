@@ -16,9 +16,12 @@ const Screen = () => {
       <Stack.Navigator>
         <Stack.Screen
           name="Home"
-          component={Home}/>
-        <Stack.Screen name="Login" component={TelaLogin} />
-        <Stack.Screen name="Copo" component={Copo}/>
+          component={Home}
+          options={{headerShown: false}} />
+        <Stack.Screen name="Login" component={TelaLogin}
+        options={{headerShown: false}} />
+        <Stack.Screen name="Copo" component={Copo}
+        options={{headerShown: false}} />
         
       </Stack.Navigator>
     </NavigationContainer>
