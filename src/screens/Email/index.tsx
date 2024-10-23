@@ -1,5 +1,5 @@
 import React from "react-native";
-import { TextInput, View, Text, Button } from "react-native"; import { useState } from "react";
+import { TextInput, View, Text, Button, Image, StyleSheet } from "react-native"; import { useState } from "react";
 import { Alert } from "react-native";
 
 
@@ -9,6 +9,9 @@ const Email = () => {
 
     return (
         <View>
+            <View>
+            <Image source={require('../../Images/logo-insta.png')} style={styles.image}/>
+            </View>
             <Text>
                 Insira seu email:
                 <TextInput>
@@ -29,6 +32,12 @@ const Email = () => {
         </View>
     )
 }
+
+const styles = StyleSheet.create({
+    Image:{
+        alignItems: 'center'
+    }
+})
 
 
 export default Email;

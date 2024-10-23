@@ -1,13 +1,14 @@
 import { PropsWithChildren } from "react";
-import { Text, View, StyleSheet, Button, Image } from "react-native";
+import { Text, View, StyleSheet, Button, Image, ImageBackground } from "react-native";
 
 
 export default function Home ({navigation}) {
     return(
         <View style={styles.container}>
             
-            <Image source={{uri: 'https://reactjs.org/logo-og.png'}}
-                   style={{height: 400, width: 400}}/>
+            <View>
+            <Image source={require('../../Images/logo-insta.png')} style={styles.image}/>
+            </View>
             <Text style={styles.text}>Home Screen</Text>
 
             <Button 

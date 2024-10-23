@@ -17,7 +17,7 @@ export default function Copo ({navigation}) {
         <View>
             
             <View>
-            <Image source={require('../../Images/Nubank.png')} style={styles.image}/>
+            <Image source={require('../../Images/logo-insta.png')} style={styles.image}/>
             </View>
 
 
@@ -65,8 +65,8 @@ const styles = StyleSheet.create({
   },
   image:{
     alignItems: 'center',
-    width: 200,
-    height: 200,
+    width: 100,
+    height: 100,
   },
   container: {
     flex: 1,
