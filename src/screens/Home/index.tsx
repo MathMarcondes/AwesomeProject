@@ -14,7 +14,7 @@ export default function Home ({navigation}) {
             <Button 
             title="Go to Login"
             onPress={() => navigation.navigate("Login")}
-            
+
             />
         </View>
     )
@@ -29,6 +29,14 @@ const styles = StyleSheet.create({
     text: {
     fontSize: 30,
     backgroundColor: "#4d0092",
+    },
+    Button: {
+    position: 'absolute',
+    borderRadius: 50,
+    paddingVertical: 8,
+    width: '60%',
+    alignSelf: 'center',
+    bottom: '15%'
     }
     
 })

@@ -16,8 +16,10 @@ export default function Copo ({navigation}) {
         
         <View>
             
-            <View>
-            <Image source={require('../../Images/logo-insta.png')} style={styles.image}/>
+            <View style>
+            <Image source={require('../../Images/logo-insta.png')} 
+            style={{width: '100%'}}
+            resizeMode="contain"/>
             </View>
 
 
