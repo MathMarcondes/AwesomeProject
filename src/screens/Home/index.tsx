@@ -1,19 +1,21 @@
 import { PropsWithChildren } from "react";
 import { Text, View, Button, Image, StyleSheet, TouchableOpacity } from "react-native";
-import React from "react";
+import * as Animatable from 'react-native-animatable'
 
 export default function Home () {
     return (
         <View style={styles.container}>
             <View style={styles.containerLogo}>
-                <Image
+
+                <Animatable.Image
+                    animation="flipInY" //passando a propriedade Animation
                     source={require('../../Images/logo.png')}
                     style={{ width: '100%' }}
                     resizeMode="contain"
                 />
             </View>
 
-            <View style={styles.containerForm}>
+            <Animatable.View delay={1000} animation="fadeInUp" style={styles.containerForm}>
                 <Text style={styles.title}>Monitore, organize seus gastos de qualquer lugar!</Text>
                 <Text style={styles.text}>Faça o login para começar</Text>
                 
@@ -22,7 +24,8 @@ export default function Home () {
                     <Text style={styles.buttonText}>Acessar</Text>
                 </TouchableOpacity>
       
-            </View>
+            </Animatable.View>
+
         </View>
     );
 }
