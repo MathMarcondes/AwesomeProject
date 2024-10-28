@@ -4,13 +4,10 @@ import { Text, View, StyleSheet, Button, Image, ImageBackground } from "react-na
 
 export default function Home () {
     return(
-        <View style={styles.container}>
-            
+        <View>
+            <Text>
+                Tela de bem vindo
+            </Text>
         </View>
-    )
+    );
 }
-
-const styles = StyleSheet.create({
-    
-    
-})

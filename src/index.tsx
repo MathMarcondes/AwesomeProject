@@ -1,13 +1,16 @@
 import * as React from 'react';
-import {NavigationContainer} from '@react-navigation/native';
-import {createNativeStackNavigator} from '@react-navigation/native-stack';
-import Home from './screens/Home';
-import TelaLogin from './screens/log';
+import { StatusBar } from 'react-native';
+
+import Routes from './routes';
+import { NavigationContainer } from '@react-navigation/native';
 
 
 
-const Stack = createNativeStackNavigator();
-
-export default function screens() {
-  
+export default function App(){
+  return(
+    <NavigationContainer>
+      <StatusBar backgroundColor="#3869D" barStyle="light-content"/>
+      <Routes/>
+    </NavigationContainer>
+  )
 }
