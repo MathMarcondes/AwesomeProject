@@ -2,7 +2,12 @@ import { PropsWithChildren } from "react";
 import { Text, View, Button, Image, StyleSheet, TouchableOpacity } from "react-native";
 import * as Animatable from 'react-native-animatable'
 
+import { useNavigation } from '@react-navigation/native'
+
 export default function Home () {
+
+    const navigation = useNavigation();
+
     return (
         <View style={styles.container}>
             <View style={styles.containerLogo}>
