@@ -3,10 +3,13 @@ import { Text, View, Button, Image, StyleSheet, TouchableOpacity } from "react-n
 import * as Animatable from 'react-native-animatable'
 
 import { useNavigation } from '@react-navigation/native'
+import Login from "../log";
+
 
 export default function Home () {
 
     const navigation = useNavigation();
+    
 
     return (
         <View style={styles.container}>
@@ -21,12 +24,15 @@ export default function Home () {
             </View>
 
             <Animatable.View delay={1000} animation="fadeInUp" style={styles.containerForm}>
+                
                 <Text style={styles.title}>Monitore, organize seus gastos de qualquer lugar!</Text>
                 <Text style={styles.text}>Faça o login para começar</Text>
                 
                
-                <TouchableOpacity style={styles.button}>
-                    <Text style={styles.buttonText}>Acessar</Text>
+                <TouchableOpacity style={styles.button} 
+                                onPress={() => navigation.navigate('Login')}>
+                <Text style={styles.buttonText}>Acessar</Text>
+                    
                 </TouchableOpacity>
       
             </Animatable.View>
