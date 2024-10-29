@@ -1,15 +1,15 @@
 import { PropsWithChildren } from "react";
 import { Text, View, Button, Image, StyleSheet, TouchableOpacity } from "react-native";
 import * as Animatable from 'react-native-animatable'
-
+import * as React from 'react';
 import { useNavigation } from '@react-navigation/native'
-import Login from "../log";
+import Routes from "../../routes";
 
 
 export default function Home () {
 
-    const navigation = useNavigation();
     
+    const navigation = useNavigation();
 
     return (
         <View style={styles.container}>
