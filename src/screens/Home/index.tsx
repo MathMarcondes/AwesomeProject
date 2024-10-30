@@ -3,7 +3,7 @@ import { Text, View, Button, Image, StyleSheet, TouchableOpacity } from "react-n
 import * as Animatable from 'react-native-animatable'
 import * as React from 'react';
 import { useNavigation } from '@react-navigation/native'
-import Routes from "../../routes";
+
 
 
 export default function Home () {
