@@ -89,7 +89,4 @@ buttonRegister: {
 },
 registerText:{
   color: '#a1a1a1'
-}
-
-
-})
+}})
