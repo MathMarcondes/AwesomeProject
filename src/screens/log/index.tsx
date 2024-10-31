@@ -22,7 +22,7 @@ export default function Login() {
         </TouchableOpacity>
 
         <TouchableOpacity style={styles.buttonRegister}>
-          <Text style={styles.registerText}>Não possui uma conta? Cadastre-se!</Text>
+          <Text style={styles.registerText} >Não possui uma conta? Cadastre-se!</Text>
         </TouchableOpacity>
 
 
