@@ -34,7 +34,7 @@ export default function Cadastro() {
 
             <TouchableOpacity style={styles.button}
                             onPress={() => {navigation.navigate('Login')}}>
-                <Text style={styles.text}>Cadastrar</Text>
+                <Text style={styles.textButton}>Cadastrar</Text>
             </TouchableOpacity>
         </Animatable.View>
         </View>
@@ -78,11 +78,15 @@ const styles = StyleSheet.create({
     button:{
         backgroundColor: '#38a69d',
         width: '100%',
-        borderRadius: 8,
-        fontSize: 4,
+        borderRadius: 4,
         paddingVertical: 8,
         marginTop: 14,
         justifyContent: 'center',
-        alignItems: 'center',
+        alignItems: 'center'
+    },
+    textButton:{
+        color: '#fff',
+        height: 30,
+        fontSize: 20,
     }
 })
