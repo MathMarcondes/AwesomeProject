@@ -44,9 +44,10 @@ export default function Cadastro() {
 const styles = StyleSheet.create({
     container:{
         backgroundColor: '#38a69d',
-        flex: 1,
+        flex: 2,
     },
     text:{
+        marginTop: 25,
         fontSize: 35,
         fontWeight: 'bold',
         color: '#fff',
@@ -55,8 +56,9 @@ const styles = StyleSheet.create({
 
     },
     containerForm:{
+        marginTop: 40,
         backgroundColor: '#fff',
-        flex: 3,
+        flex: 1,
         borderTopLeftRadius: 25,
         borderTopRightRadius: 25,
         paddingStart: '5%',
